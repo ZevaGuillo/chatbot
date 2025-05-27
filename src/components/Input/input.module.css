@@ -1,0 +1,86 @@
+.chatInput {
+	display: flex;
+	flex-direction: column;
+	padding: var(--chat--input--padding);
+	border-top: 1px solid var(--chat--color-light-shade-100);
+	background-color: var(--chat--color-background);
+}
+
+.chatInputs {
+	position: relative;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.textarea {
+	flex-grow: 1;
+	width: 100%;
+	min-height: 2.5rem;
+	max-height: 480px;
+	overflow-y: auto;
+	font-size: var(--chat--font-size);
+	padding: var(--chat--input--padding-textarea);
+	border: 1px solid var(--chat--color-light-shade-100);
+	border-radius: var(--chat--border-radius);
+	resize: none;
+	line-height: 1.4;
+	outline: none;
+	transition: border-color 0.2s ease-in-out;
+}
+
+.textarea:focus {
+	border-color: var(--chat--color-primary);
+}
+
+.chatInputsControls {
+	display: flex;
+	gap: 0.25rem;
+	align-items: flex-end;
+	padding-bottom: 0.25rem;
+}
+
+.chatInputFileButton {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background: transparent;
+	color: var(--chat--color-secondary);
+	padding: 0.25rem;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+.chatInputFileButton:hover {
+	background-color: var(--chat--color-light-shade-50);
+}
+
+.chatInputSendButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: var(--chat--color-primary);
+	color: white;
+	padding: 0.5rem;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.chatInputSendButton:hover {
+	background-color: var(--chat--color-primary-dark);
+}
+
+.chatInputSendButton:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.chatFiles {
+	margin-top: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}

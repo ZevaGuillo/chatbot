@@ -1,0 +1,27 @@
+.messagesList {
+	margin-top: auto;
+	padding: var(--chat--messages-list--padding);
+	display: block;
+}
+
+.emptyContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.empty {
+	text-align: center;
+	color: var(--color-text-base);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.emptyIcon {
+	font-size: 2rem;
+	color: var(--color-button-secondary-border);
+}

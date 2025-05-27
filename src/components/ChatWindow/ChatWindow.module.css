@@ -1,0 +1,47 @@
+.chatWindowWrapper {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: var(--chat--window--bottom);
+	right: var(--chat--window--right);
+	z-index: var(--chat--window--z-index);
+	max-width: calc(100% - 2 * var(--chat--spacing));
+	max-height: calc(100% - 2 * var(--chat--spacing));
+}
+
+.chatWindow {
+	width: var(--chat--window--width);
+	height: var(--chat--window--height);
+	max-width: 100%;
+	max-height: 100%;
+	border: 1px solid var(--chat--color-light-shade-100);
+	border-radius: var(--chat--border-radius);
+	margin-bottom: var(--chat--spacing);
+	overflow: hidden;
+	transform-origin: bottom right;
+	display: flex;
+}
+
+.chatWindowToggle {
+	background: var(--chat--toggle--background);
+	color: var(--chat--toggle--color);
+	cursor: pointer;
+	width: var(--chat--toggle--width);
+	height: var(--chat--toggle--height);
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.chatWindowToggle:hover {
+	transform: scale(1.05);
+	background: var(--chat--toggle--hover--background);
+}
+
+.chatWindowToggle:active {
+	transform: scale(0.95);
+	background: var(--chat--toggle--active--background);
+}

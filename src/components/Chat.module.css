@@ -1,0 +1,16 @@
+.chat-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chat-close-button {
+	display: flex;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.chat-close-button:hover {
+	color: var(--chat--close--button--color-hover, var(--chat--color-primary));
+}

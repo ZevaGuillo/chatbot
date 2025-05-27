@@ -1,0 +1,56 @@
+.messageTyping {
+	max-width: 80px;
+}
+
+.animationBouncing .circle {
+	animation: bouncing 800ms ease-in-out infinite;
+}
+
+.animationScaling .circle {
+	animation: scaling 800ms ease-in-out infinite;
+}
+
+.typingBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle {
+	display: block;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: var(--chat--color-typing);
+	margin: 3px;
+}
+
+.circle:nth-child(1) {
+	animation-delay: 0ms;
+}
+
+.circle:nth-child(2) {
+	animation-delay: 333ms;
+}
+
+.circle:nth-child(3) {
+	animation-delay: 666ms;
+}
+
+@keyframes scaling {
+	0%, 33%, 100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.4);
+	}
+}
+
+@keyframes bouncing {
+	0%, 33%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
