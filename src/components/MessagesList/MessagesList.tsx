@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styles from './MessagesList.module.css';
 import type { ChatMessage } from '../../types';
 import { useChat } from '../../composables';
-import { Message } from '../Message';
+import { Message } from '../Message/Message';
 import { MessageTyping } from '../MessageTyping/MessageTyping';
 
 interface MessagesListProps {

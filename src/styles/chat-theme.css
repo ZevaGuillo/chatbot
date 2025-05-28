@@ -1,0 +1,34 @@
+:root {
+	/* Colores generales */
+	--chat--color-background: #ffffff;
+	--chat--color-text: #2c2c2c;
+
+	/* Header */
+	--chat--color-header: #1f2937;
+	--chat--color-header-text: #ffffff;
+
+	/* Footer */
+	--chat--color-footer: #f9fafb;
+
+	/* Burbujas */
+	--chat--color-user-bubble: #2563eb; /* Azul */
+	--chat--color-user-text: #ffffff;
+
+	--chat--color-bot-bubble: #f3f4f6; /* Gris claro */
+	--chat--color-bot-text: #111827;
+
+	/* Estado "escribiendo" */
+	--chat--color-typing: #6b7280;
+
+	/* Bordes y detalles */
+	--chat--border-radius: 1rem;
+	--chat--color-light-shade-100: #e5e7eb;
+	--chat--color-subtle-text: #6b7280;
+	--chat--color-link: #3b82f6;
+
+	/* Colores primarios */
+	--chat--color-primary: #2563eb;
+	--chat--color-primary-dark: #1e40af;
+
+	--chat--color-secondary: #10b981;
+}

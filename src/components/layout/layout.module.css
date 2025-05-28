@@ -1,0 +1,24 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: var(--chat--color-background);
+	color: var(--chat--color-text);
+	border-radius: var(--chat--border-radius);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.header {
+	padding: 1rem;
+	background: var(--chat--color-header);
+	color: var(--chat--color-header-text);
+	border-bottom: 1px solid var(--chat--color-light-shade-100);
+}
+
+.footer {
+	padding: 1rem;
+	border-top: 1px solid var(--chat--color-light-shade-100);
+	background: var(--chat--color-footer);
+}

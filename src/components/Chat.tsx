@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useChat, useI18n, useOptions } from '../composables';
 import { chatEventBus } from '../utils';
-import { Layout } from './Layout';
-import { MessagesList } from './MessagesList';
-import { GetStarted } from './GetStarted';
-import { GetStartedFooter } from './GetStartedFooter';
-import { Input } from './Input';
 import { X } from 'lucide-react'; // ícono alternativo
+import { Layout } from './layout/Layout';
+import { MessagesList } from './MessagesList/MessagesList';
+import { GetStarted } from './GetStarted/GetStarted';
+import { Input } from './Input/Input';
+import { GetStartedFooter } from './GetStartedFooter/GetStartedFooter';
 
 export const Chat: React.FC = () => {
 	const { t } = useI18n();

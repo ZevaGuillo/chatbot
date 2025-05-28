@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './MessageTyping.module.css';
 import type { ChatMessage } from '../../types';
-import { Message } from '../Message';
+import { Message } from '../Message/Message';
 
 interface MessageTypingProps {
 	animation?: 'bouncing' | 'scaling';

@@ -1,0 +1,35 @@
+.getStarted {
+	text-align: center;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	color: var(--chat--color-title);
+}
+
+.subtitle {
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+	color: var(--chat--color-subtitle);
+}
+
+.button {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 8px;
+	background-color: var(--chat--color-primary);
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.button:hover {
+	background-color: var(--chat--color-primary-dark);
+}

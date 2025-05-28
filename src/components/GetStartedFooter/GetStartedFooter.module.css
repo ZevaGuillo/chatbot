@@ -1,0 +1,22 @@
+.footer {
+	background-color: var(--chat--color-footer);
+	padding: 1rem;
+	border-top: 1px solid var(--chat--color-light-shade-100);
+}
+
+.hint {
+	font-size: 0.9rem;
+	color: var(--chat--color-subtle-text);
+	margin-bottom: 0.5rem;
+}
+
+.suggestions {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	font-size: 0.9rem;
+	color: var(--chat--color-text);
+}

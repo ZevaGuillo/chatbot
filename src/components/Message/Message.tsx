@@ -8,10 +8,10 @@ import bash from 'highlight.js/lib/languages/bash';
 import MarkdownIt from 'markdown-it';
 import markdownLink from 'markdown-it-link-attributes';
 
-import { useOptions } from '../composables';
+import { useOptions } from '../../composables';
 import styles from './Message.module.css';
-import type { ChatMessage, ChatMessageText } from '../types';
-import { ChatFile } from './ChatFile/ChatFile';
+import type { ChatMessage, ChatMessageText } from '../../types';
+import { ChatFile } from '../ChatFile/ChatFile';
 
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('typescript', typescript);
@@ -45,7 +45,9 @@ export const Message: React.FC<MessageProps> = ({ message, beforeMessageSlot }) 
         if (lang && hljs.getLanguage(lang)) {
           try {
             return hljs.highlight(str, { language: lang }).value;
-          } catch {}
+          } catch {
+            console.log();
+          }
         }
         return '';
       },
