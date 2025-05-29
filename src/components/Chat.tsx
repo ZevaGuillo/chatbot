@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import { useChat, useI18n, useOptions } from '../composables';
 import { chatEventBus } from '../utils';
-import { X } from 'lucide-react'; // ícono alternativo
+import { X } from 'lucide-react';
+
 import { Layout } from './layout/Layout';
 import { MessagesList } from './MessagesList/MessagesList';
 import { GetStarted } from './GetStarted/GetStarted';
 import { Input } from './Input/Input';
 import { GetStartedFooter } from './GetStartedFooter/GetStartedFooter';
+
+import styles from './Chat.module.css';
 
 export const Chat: React.FC = () => {
 	const { t } = useI18n();
@@ -45,13 +48,13 @@ export const Chat: React.FC = () => {
 	}, []);
 
 	return (
-		<Layout className="chat-wrapper">
+		<Layout className={styles.chatWrapper}>
 			<Layout.Header>
-				<div className="chat-heading">
+				<div className={styles.chatHeading}>
 					<h1>{t('title')}</h1>
 					{showCloseButton && (
 						<button
-							className="chat-close-button"
+							className={styles.chatCloseButton}
 							title={t('closeButtonTooltip')}
 							onClick={closeChat}
 						>
