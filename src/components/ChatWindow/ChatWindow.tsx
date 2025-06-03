@@ -3,7 +3,7 @@ import { MessageSquare, ChevronDown } from 'lucide-react'; // íconos reemplazo
 
 import styles from './ChatWindow.module.css';
 import { chatEventBus } from '../../utils';
-import { Chat } from '../Chat';
+import { Chat } from '../Chat/Chat';
 
 export const ChatWindow: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);

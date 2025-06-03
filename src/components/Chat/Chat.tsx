@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import { useChat, useI18n, useOptions } from '../composables';
-import { chatEventBus } from '../utils';
+import { useChat, useI18n, useOptions } from '../../composables';
+import { chatEventBus } from '../../utils';
 import { X } from 'lucide-react';
 
-import { Layout } from './layout/Layout';
-import { MessagesList } from './MessagesList/MessagesList';
-import { GetStarted } from './GetStarted/GetStarted';
-import { Input } from './Input/Input';
-import { GetStartedFooter } from './GetStartedFooter/GetStartedFooter';
+import { Layout } from '../layout/Layout';
+import { MessagesList } from '../MessagesList/MessagesList';
+import { GetStarted } from '../GetStarted/GetStarted';
+import { Input } from '../Input/Input';
+import { GetStartedFooter } from '../GetStartedFooter/GetStartedFooter';
 
 import styles from './Chat.module.css';
 

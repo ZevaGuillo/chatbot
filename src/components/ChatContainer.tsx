@@ -6,7 +6,7 @@ import type { ChatOptions } from '../types';
 import { ChatProvider } from '../composables/ChatProvider';
 
 export const chatOptions: ChatOptions = {
-	webhookUrl: 'https://rich-sparrow-literate.ngrok-free.app/webhook/a7282d9a-9bf7-43a9-b3ce-c8178e065bd1',
+	webhookUrl: 'https://rich-sparrow-literate.ngrok-free.app/webhook/8f649673-fb04-4916-9c06-b8617b561661/chat',
 	mode: 'window',
 	showWindowCloseButton: true,
 	showWelcomeScreen: true,
@@ -16,7 +16,7 @@ export const chatOptions: ChatOptions = {
 	chatSessionKey: 'sessionId',
 	i18n: {
 		en: {
-			title: 'Hi there! 👋',
+			title: 'Hi there! Soy Sapi 🤖👋',
 			subtitle: 'How can I assist you today?',
 			getStarted: 'Start Chat',
 			inputPlaceholder: 'Type your message...',

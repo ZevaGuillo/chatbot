@@ -1,4 +1,3 @@
-// context/ChatProvider.tsx
 import React, { useState } from 'react';
 import type { Chat, ChatMessage } from '../types';
 import { ChatContext } from '../constants';
@@ -35,7 +34,7 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
 			},
 			body: JSON.stringify({
 				action: 'sendMessage',
-				message: text,
+				chatInput: text,
 				sessionId: options.chatSessionKey,
 			}),
 		});
@@ -44,7 +43,7 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
 
 		const botMessage: ChatMessage = {
 			id: crypto.randomUUID(),
-			text: data.text ?? '🤖 Sin respuesta',
+			text: data.output ?? '🤖 Sin respuesta',
 			sender: 'bot',
 		};
 
